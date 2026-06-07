@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.nav-container{
+    padding: 20px 0;
+}
+
+.nav-container h2{
+    color: rgb(29,29,29);
+}
+
+.nav-container .nav{
+    justify-self: flex-end;
+    display: flex;
+}
+
+.nav-container .nav a{
+    margin: 0 20px;
+    color: black;
+}
+
+.nav-container .nav .active{
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.header{
+    width: 80%;
+    margin: 70px auto;
+}
+
+.header img{
+    width: 100%;
+    margin-left: auto;
+}
+
+.header .container h3{
+    font-size: 70px;
+    position: relative;
+    display: inline-block;
+}
+
+.header .container h3::after{
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 3px;
+    background: rgb(23,125,165);
+
+    left: 0;
+    bottom: -15px;
+}
+
+.header .container p{
+    margin: 20px 0;
+}
+
+.container a{
+    padding: 15px;
+    background: #333;
+    margin: 20px 0;
+    display: inline-block;
+    color: #fff;
+    border-radius: 10px;
+    justify-self: start;
+    align-self: start;
+}
+
+.headphone{
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    opacity: .1;
+    z-index: -1;
+}
+
+.footer{
+    margin: 100px 0 0 0;
+    background: #333;
+    padding: 100px 100px;
+}
+
+.footer .main-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2rem;
+}
+
+.footer .main-container h4{
+    color: rgb(41,100,177);
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.footer .main-container li{
+    cursor: pointer;
+    margin: 3px 0;
+}
+
+.footer hr{
+    margin: 20px 0;
+    opacity: .4;
+}
